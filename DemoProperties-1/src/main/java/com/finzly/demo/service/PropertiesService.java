@@ -33,7 +33,7 @@ public class PropertiesService {
 			seperatorByEquals(content);
 			return "Added";
 		}catch (Exception e) {
-			return " ----------------------"+e.getMessage();
+			return " "+e.getMessage();
 		}
 	}
 
