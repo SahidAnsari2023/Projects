@@ -38,8 +38,8 @@ public class PropertiesService {
 	}
 
 	public void seperatorByEquals(StringBuilder content) {
-		String c = content.toString();
-		String[] contentsLine = c.split("\n");
+		//String c = content.toString();
+		String[] contentsLine = content.toString().split("\n");
 		String key;
 		String value;
 
