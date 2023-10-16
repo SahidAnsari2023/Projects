@@ -36,11 +36,17 @@ public class PropertiesService {
 //			seperatorByEquals(content);
 			
 			properties.load(inputStream);
+//			System.out.println(properties.toString());
 			for (String name : properties.stringPropertyNames()) {
 				String value = properties.getProperty(name);
+//				System.out.println(name);
+//				System.out.println(value);
+				
 				PropertiesManager propertiesManager = new PropertiesManager();
+				
 				propertiesManager.setPropertiesKeys(name);
 				propertiesManager.setPropertiesValues(value);
+				
 				propertiesRepository.save(propertiesManager);
 			}
 			return "Added";
