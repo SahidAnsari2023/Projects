@@ -1,6 +1,7 @@
 package com.finzly.demo.controller;
 
-import java.io.IOException; 
+import java.io.IOException;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired; 
 import org.springframework.core.env.Environment;
@@ -25,7 +26,7 @@ public class PropertiesController {
 //	@TestPropertySource("/foo.properties")
 	
 	@RequestMapping(method = RequestMethod.GET,value = "/getallfromprop")
-	public String readPropertiesFile() throws IOException {
+	public Map<String, String> readPropertiesFile() throws IOException {
 		String filename = "application.properties";
 		return propertiesService.readFileFromResources(filename);
 	}
