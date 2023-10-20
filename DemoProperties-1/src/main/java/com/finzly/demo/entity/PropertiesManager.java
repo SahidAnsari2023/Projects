@@ -18,7 +18,7 @@ public class PropertiesManager {
 	private String propertiesKeys;
 	private String propertiesValues;
 	
-
+  
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public long getId1() {
