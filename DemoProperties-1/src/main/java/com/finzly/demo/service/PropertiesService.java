@@ -28,6 +28,7 @@ public class PropertiesService {
 //		Properties properties = new Properties();
 			
 		try {
+//			Method 0
 			BufferedInputStream bis = new BufferedInputStream(new ClassPathResource(fileName).getInputStream());
 			int characterInBis;			
 			StringBuilder currentLine = new StringBuilder();
